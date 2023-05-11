@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kalam', cursive !important;
+}
+
+.main-box-bg {
+    padding: 20px 0;
+    background: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.note-bg {
+    width: 400px;
+    margin: 0 auto;
+    background: url(note-page.jpg);
+    background-position: top center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.note-bg {
+    padding: 116px 40px 110px 40px;
+}
+
+.note-bg input {
+    background-color: transparent;
+    height: 30px;
+    border: none;
+    box-shadow: none;
+    padding: 5px;
+    color: #5a5a5a;
+    font-size: 16px;
+}
+
+.note-bg input:focus {
+    box-shadow: none;
+}
+
+.note-bg input::placeholder {
+    color: #bcbcbc;
+}
+
+.add-btn {
+    border: none;
+    background-color: transparent;
+    color: #bcbcbc;
+    float: right;
+}
+
+.add-btn i {
+    transform: translateY(22%);
+}
+
+.list-box {
+    margin-top: 35px;
+    font-size: 16px;
+    color: #5a5a5a;
+    font-weight: 500;
+    padding: 5px;
+    /* background: #dffff3; */
+}
+
+.asc{
+    align-self: center;
+}
+
+.list-items{
+    position: relative;
+    display: block;
+    padding-left: 0;
+}
+.list-items li{
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    line-height: 28px;
+    margin-bottom: 5px;;
+}
+
+.list-items li::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: url(checkbox.png);
+    position: absolute;
+    left: 0;
+    top: -3px;
+    background-size: cover !important;
+}
+
+li.checked::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: -3px;
+    background-size: cover !important;
+    background: url(checkbox-filled.png)
+}
+ul li.checked {
+    width: 100%;
+    text-decoration: line-through;
+    background: #dffff3;
+}
+span {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
+input:-internal-autofill-selected{
+    background-color: transparent !important;
+}
